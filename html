@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Fotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .title {
+            color: #00008B; /* Azul escuro */
+            text-align: center;
+        }
+        .description {
+            color: #696969; /* Cinza escuro */
+            text-align: center;
+        }
+        .main-photo {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .photo-gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .photo-gallery img {
+            margin: 0 10px;
+            width: 100px;
+            height: 100px;
+        }
+        .photo-gallery button {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #00008B; /* Azul escuro */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Título da Página</h1>
+    <img src="foto-principal.jpg" alt="Foto Principal" class="main-photo">
+    <p class="description">Este é um texto descritivo abaixo da foto principal.</p>
+    <div class="photo-gallery">
+        <div>
+            <img src="foto1.jpg" alt="Foto 1">
+            <button onclick="location.href='link1.html'">Ver Mais</button>
+        </div>
+        <div>
+            <img src="foto2.jpg" alt="Foto 2">
+            <button onclick="location.href='link2.html'">Ver Mais</button>
+        </div>
+        <div>
+            <img src="foto3.jpg" alt="Foto 3">
+            <button onclick="location.href='link3.html'">Ver Mais</button>
+        </div>
+    </div>
+</body>
+</html>
